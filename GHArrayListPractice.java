@@ -20,6 +20,15 @@ public class GHArrayListPractice{
 
 	}
 
+	public static void printList (ArrayList <Integer> list){
+
+		for(int i = 0; i < list.size(); i++){
+
+			System.out.print(list.get(i)+", ");
+		}
+
+	}
+
 	public static void main(String[]args){
 
 		ArrayList <Integer> list1 = new ArrayList<>();
@@ -38,6 +47,8 @@ public class GHArrayListPractice{
 		list2.add(10);
 
 		System.out.println(combineLists(list1, list2));
+
+		printList(list1);
 	}
 
 }
